@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITAL COMPANY — Виробництво пожежної та спеціальної техніки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════════════ PAGE GRID OVERLAY ══════════════════ -->
+  <div class="page-grid" aria-hidden="true">
+    <div class="page-grid__col"></div>
+    <div class="page-grid__col"></div>
+    <div class="page-grid__col"></div>
+    <div class="page-grid__col"></div>
+  </div>
+
+  <!-- ══════════════════ HEADER ══════════════════ -->
+  <header class="header" id="header">
+    <a href="https://titalcompany.com/" class="header__logo">
+      <svg class="header__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="18" y1="2" x2="18" y2="34" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="2" y1="18" x2="34" y2="18" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+      <span>TITAL COMPANY</span>
+    </a>
+    <div class="header__right">
+      <div class="header__lang">
+        <a href="https://titalcompany.com/" class="is-active">UA</a>
+        <a href="https://titalcompany.com/en/">EN</a>
+        <a href="https://titalcompany.com/ru/">RU</a>
+      </div>
+      <button class="header__menu-btn" id="menuBtn" aria-label="Відкрити меню" aria-expanded="false">
+        МЕНЮ
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════ MENU OVERLAY ══════════════════ -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu-overlay__inner">
+      <nav class="menu-overlay__nav">
+        <a href="#products" class="menu-link" data-num="01">Продукція</a>
+        <a href="#about"    class="menu-link" data-num="02">Про компанію</a>
+        <a href="#worldwide" class="menu-link" data-num="03">Географія</a>
+        <a href="#clients"  class="menu-link" data-num="04">Клієнти</a>
+        <a href="#articles" class="menu-link" data-num="05">Статті</a>
+        <a href="#footer"   class="menu-link" data-num="06">Контакти</a>
+      </nav>
+      <div class="menu-overlay__bottom">
+        <div class="menu-overlay__lang">
+          <a href="https://titalcompany.com/">UA</a>
+          <a href="https://titalcompany.com/en/">EN</a>
+          <a href="https://titalcompany.com/ru/">RU</a>
+        </div>
+        <div class="menu-overlay__social">
+          <a href="https://www.facebook.com/TitalCompany" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.youtube.com/channel/UC4BGrF817ATCCKeUpwVaRkg/videos" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════ HERO ══════════════════ -->
+    <!--
+      HERO IMAGE → збережіть як: images/hero-truck.png
+      Рекомендоване зображення: зображення 4 (динамічна пожежна машина з розмиттям руху)
+    -->
+    <section class="hero">
+
+      <!-- Vertical grid lines inside hero -->
+      <div class="hero__lines" aria-hidden="true">
+        <div class="hero__line"></div>
+        <div class="hero__line"></div>
+        <div class="hero__line"></div>
+      </div>
+
+      <!-- Floating nav (top-right) -->
+      <nav class="hero__nav">
+        <a href="#products">ПРОДУКЦІЯ</a>
+        <a href="#about">ПРО НАС</a>
+        <a href="#clients">КЛІЄНТИ</a>
+        <a href="#articles">СТАТТІ</a>
+      </nav>
+
+      <!-- Vehicle PNG (right side, bottom-anchored) -->
+      <div class="hero__vehicle">
+        <img
+          src="https://placehold.co/960x560/E8E5DF/CC1F1F?text=VEHICLE+PNG"
+          alt="Пожежна автоцистерна TITAL"
+          class="hero__vehicle-img"
+          loading="eager"
+        >
+      </div>
+
+      <!-- Main title (bottom-left) -->
+      <div class="hero__title-wrap">
+        <h1 class="hero__title">Tital<br>Company</h1>
+      </div>
+
+      <!-- Tagline (bottom-right) -->
+      <p class="hero__tagline">
+        ВИРОБНИЦТВО ТА<br>
+        ПРОЕКТУВАННЯ<br>
+        ПОЖЕЖНОЇ І<br>
+        СПЕЦІАЛЬНОЇ ТЕХНІКИ.
+      </p>
+
+    </section>
+
+    <!-- ══════════════════ PRODUCTS ══════════════════ -->
+    <!--
+      PRODUCT IMAGES: PNG з прозорим фоном, розміщуйте в images/
+      Безкоштовні 3D моделі техніки:
+        • Sketchfab (безкоштовне завантаження): https://sketchfab.com/search?q=fire+truck&features=downloadable
+        • Free3D: https://free3d.com/3d-models/fire-truck
+        • CGTrader (безкоштовний розділ): https://www.cgtrader.com/free-3d-models/vehicle/other/fire-truck
+        • TurboSquid (free): https://www.turbosquid.com/Search/3D-Models/free/fire-truck
+        Після завантаження .blend/.fbx рендеруйте в Blender (безкоштовно) з прозорим HDRI-фоном.
+    -->
+    <section class="products" id="products">
+      <div class="section-meta">
+        <span class="mono-label">ПРОДУКЦІЯ</span>
+        <span class="mono-label">[TITAL.1]</span>
+      </div>
+
+      <div class="products__heading-wrap" data-reveal>
+        <h2 class="display-h">Наша<br>продукція</h2>
+      </div>
+
+      <div class="products__grid">
+
+        <article class="p-card" data-reveal data-reveal-delay="1">
+          <div class="p-card__meta">
+            <span class="p-card__num">01</span>
+            <span class="p-card__line"></span>
+            <span class="p-card__cat">РЯТУВАЛЬНА</span>
+          </div>
+          <div class="p-card__img-wrap">
+            <!-- images/fire-truck.png → зображення 1: Mercedes-Benz Actros червона пожежна машина -->
+            <img src="https://placehold.co/400x260/EFEDE7/CC1F1F?text=ПОЖЕЖНА" alt="Пожежно-рятувальна техніка" loading="lazy">
+          </div>
+          <h3 class="p-card__title">Пожежно-рятувальна техніка</h3>
+          <a href="https://titalcompany.com/product-category/pozhezhno-rjatuvaljna-tekhnika/" class="p-card__link" target="_blank" rel="noopener">
+            <span>Переглянути</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <line x1="4" y1="16" x2="16" y2="4" stroke="currentColor" stroke-width="1.5"/>
+              <polyline points="7,4 16,4 16,13" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </article>
+
+        <article class="p-card" data-reveal data-reveal-delay="2">
+          <div class="p-card__meta">
+            <span class="p-card__num">02</span>
+            <span class="p-card__line"></span>
+            <span class="p-card__cat">АЕРОДРОМНА</span>
+          </div>
+          <div class="p-card__img-wrap">
+            <!-- images/airport-truck.png → зображення 2: сучасна електрична пожежна машина (red/yellow) -->
+            <img src="https://placehold.co/400x260/EFEDE7/CC1F1F?text=АЕРОДРОМ" alt="Аеродромна техніка" loading="lazy">
+          </div>
+          <h3 class="p-card__title">Аеродромна техніка</h3>
+          <a href="https://titalcompany.com/product-category/aerodromna-tekhnika/" class="p-card__link" target="_blank" rel="noopener">
+            <span>Переглянути</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <line x1="4" y1="16" x2="16" y2="4" stroke="currentColor" stroke-width="1.5"/>
+              <polyline points="7,4 16,4 16,13" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </article>
+
+        <article class="p-card" data-reveal data-reveal-delay="3">
+          <div class="p-card__meta">
+            <span class="p-card__num">03</span>
+            <span class="p-card__line"></span>
+            <span class="p-card__cat">ІНДУСТРІАЛЬНА</span>
+          </div>
+          <div class="p-card__img-wrap">
+            <!-- images/industrial-truck.png → зображення 3: IVECO Daily flatbed -->
+            <img src="https://placehold.co/400x260/EFEDE7/CC1F1F?text=ІНДУСТРІА" alt="Індустріальна техніка" loading="lazy">
+          </div>
+          <h3 class="p-card__title">Індустріальна техніка</h3>
+          <a href="https://titalcompany.com/product-category/industrialjna-tekhnika/" class="p-card__link" target="_blank" rel="noopener">
+            <span>Переглянути</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <line x1="4" y1="16" x2="16" y2="4" stroke="currentColor" stroke-width="1.5"/>
+              <polyline points="7,4 16,4 16,13" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </article>
+
+        <article class="p-card" data-reveal data-reveal-delay="2">
+          <div class="p-card__meta">
+            <span class="p-card__num">04</span>
+            <span class="p-card__line"></span>
+            <span class="p-card__cat">ВІЙСЬКОВА</span>
+          </div>
+          <div class="p-card__img-wrap">
+            <!-- images/military-truck.png → зображення 5: бронеавтомобіль LENCO сірий (вид спереду) -->
+            <img src="https://placehold.co/400x260/EFEDE7/CC1F1F?text=ВІЙСЬКОВА" alt="Поліцейська та військова техніка" loading="lazy">
+          </div>
+          <h3 class="p-card__title">Поліцейська та військова техніка</h3>
+          <a href="https://titalcompany.com/product-category/policejsjka-ta-vijsjkova-tekhnikaa/" class="p-card__link" target="_blank" rel="noopener">
+            <span>Переглянути</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <line x1="4" y1="16" x2="16" y2="4" stroke="currentColor" stroke-width="1.5"/>
+              <polyline points="7,4 16,4 16,13" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </article>
+
+        <article class="p-card" data-reveal data-reveal-delay="3">
+          <div class="p-card__meta">
+            <span class="p-card__num">05</span>
+            <span class="p-card__line"></span>
+            <span class="p-card__cat">ОБЛАДНАННЯ</span>
+          </div>
+          <div class="p-card__img-wrap">
+            <!-- images/equipment.png → зображення 6: бронеавтомобіль LENCO з відкритою рампою -->
+            <img src="https://placehold.co/400x260/EFEDE7/CC1F1F?text=ОБЛАДНАННЯ" alt="Спеціальне обладнання" loading="lazy">
+          </div>
+          <h3 class="p-card__title">Спеціальне обладнання</h3>
+          <a href="https://titalcompany.com/product-category/obladnannjaa/" class="p-card__link" target="_blank" rel="noopener">
+            <span>Переглянути</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <line x1="4" y1="16" x2="16" y2="4" stroke="currentColor" stroke-width="1.5"/>
+              <polyline points="7,4 16,4 16,13" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </article>
+
+      </div>
+
+      <div class="products__cta-row">
+        <a href="https://titalcompany.com/product-category/pozhezhno-rjatuvaljna-tekhnika/" class="btn-outline" target="_blank" rel="noopener">
+          Переглянути всю продукцію <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════════════ ABOUT ══════════════════ -->
+    <section class="about" id="about">
+      <div class="section-meta">
+        <span class="mono-label">ПРО КОМПАНІЮ</span>
+        <span class="mono-label">[TITAL.2]</span>
+      </div>
+
+      <div class="about__layout">
+        <!-- Left: large heading + description -->
+        <div class="about__left" data-reveal>
+          <h2 class="display-h--large">Коротко<br>про<br>компанію</h2>
+          <p class="about__desc">
+            МИ Є ПРОВІДНИМ ВИРОБНИКОМ<br>
+            ПОЖЕЖНОЇ ТА СПЕЦІАЛЬНОЇ ТЕХНІКИ<br>
+            В УКРАЇНІ. БІЛЬШЕ ДВАДЦЯТИ РОКІВ<br>
+            ДОСВІДУ, ВЛАСНЕ ВИРОБНИЦТВО,<br>
+            МІЖНАРОДНА ГЕОГРАФІЯ.
+          </p>
+        </div>
+
+        <div class="about__divider" aria-hidden="true"></div>
+
+        <!-- Right: rotating keyword cards -->
+        <div class="about__right">
+          <div class="kw-card" data-reveal>
+            <div class="kw-card__header">
+              <span>Наші цінності</span>
+              <span class="kw-card__num">01</span>
+            </div>
+            <div class="kw-card__word" id="rotatingWord">
+              <span>Професіоналізм</span>
+            </div>
+            <div class="kw-card__footer">
+              <span class="mono-label">ЗМІНЮЄТЬСЯ КОЖНІ 2.5С</span>
+            </div>
+          </div>
+
+          <div class="kw-card kw-card--tilted" data-reveal>
+            <div class="kw-card__header">
+              <span>Що нами рухає</span>
+              <span class="kw-card__num">02</span>
+            </div>
+            <div class="kw-card__word">
+              <span>Інновації</span>
+            </div>
+            <div class="kw-card__footer">
+              <span class="mono-label">* дякуємо BAI S.r.l. за ідею</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ WORLDWIDE ══════════════════ -->
+    <section class="worldwide" id="worldwide">
+      <div class="section-meta">
+        <span class="mono-label">ГЕОГРАФІЯ</span>
+        <span class="mono-label">[TITAL.3]</span>
+      </div>
+
+      <div class="worldwide__layout">
+        <div class="worldwide__heading-col" data-reveal>
+          <h2 class="display-h">Працюємо<br>з усім<br>світом</h2>
+        </div>
+
+        <div class="worldwide__divider" aria-hidden="true"></div>
+
+        <div class="worldwide__map-col">
+          <!--
+            MAP IMAGE: Помістіть зображення карти як images/world-map.png
+            Можна використати оригінальне зображення з сайту або SVG-карту з:
+            https://simplemaps.com/resources/svg-world  (безкоштовно)
+          -->
+          <div class="worldwide__map-wrap" data-reveal>
+            <img src="https://placehold.co/900x460/E8E5DF/1C1C1C?text=WORLD+MAP" alt="Географія роботи TITAL" class="worldwide__map-img">
+            <div class="worldwide__legend">
+              <div class="legend-item">
+                <span class="legend-dot legend-dot--active"></span>
+                <span class="mono-label">Країни з якими ми працюємо</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot legend-dot--pending"></span>
+                <span class="mono-label">Країни з якими ведуться переговори</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ CLIENTS ══════════════════ -->
+    <section class="clients" id="clients">
+      <div class="section-meta">
+        <span class="mono-label">КЛІЄНТИ</span>
+        <span class="mono-label">[TITAL.4]</span>
+      </div>
+
+      <div class="clients__heading-wrap" data-reveal>
+        <h2 class="display-h">Наші клієнти</h2>
+      </div>
+
+      <!-- Scrolling marquee -->
+      <div class="marquee-wrap">
+        <div class="marquee" aria-label="Список клієнтів">
+          <div class="marquee__inner">
+            <span>НАЕК «Енергоатом»</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>КАРС «Київська служба порятунку»</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>Коростенський завод МДФ</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>Міжнародний Аеропорт «Одеса»</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>Міжнародний Аеропорт «Львів»</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>Южно-Українська АЕС</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>Енергопром Україна</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>Запорізька АЕС</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>«Миронівський хлібопродукт»</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>Рівненська АЕС</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>Міжнародний аеропорт «Чернівці»</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>Міністерство оборони України</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+            <span>МЕТІНВЕСТ ХОЛДИНГ</span>
+            <span class="marquee__dot" aria-hidden="true">·</span>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="marquee__inner" aria-hidden="true">
+            <span>НАЕК «Енергоатом»</span>
+            <span class="marquee__dot">·</span>
+            <span>КАРС «Київська служба порятунку»</span>
+            <span class="marquee__dot">·</span>
+            <span>Коростенський завод МДФ</span>
+            <span class="marquee__dot">·</span>
+            <span>Міжнародний Аеропорт «Одеса»</span>
+            <span class="marquee__dot">·</span>
+            <span>Міжнародний Аеропорт «Львів»</span>
+            <span class="marquee__dot">·</span>
+            <span>Южно-Українська АЕС</span>
+            <span class="marquee__dot">·</span>
+            <span>Енергопром Україна</span>
+            <span class="marquee__dot">·</span>
+            <span>Запорізька АЕС</span>
+            <span class="marquee__dot">·</span>
+            <span>«Миронівський хлібопродукт»</span>
+            <span class="marquee__dot">·</span>
+            <span>Рівненська АЕС</span>
+            <span class="marquee__dot">·</span>
+            <span>Міжнародний аеропорт «Чернівці»</span>
+            <span class="marquee__dot">·</span>
+            <span>Міністерство оборони України</span>
+            <span class="marquee__dot">·</span>
+            <span>МЕТІНВЕСТ ХОЛДИНГ</span>
+            <span class="marquee__dot">·</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ ARTICLES ══════════════════ -->
+    <section class="articles" id="articles">
+      <div class="section-meta">
+        <span class="mono-label">СТАТТІ</span>
+        <span class="mono-label">[TITAL.5]</span>
+      </div>
+
+      <div class="articles__layout">
+
+        <!-- Featured image left -->
+        <div class="articles__featured" data-reveal>
+          <!--
+            ARTICLE IMAGE: images/article-featured.jpg
+            Розмір рекомендований: 800×1000px
+          -->
+          <!-- images/article-featured.jpg → зображення 7: чорний поліцейський бронеавтомобіль -->
+          <img
+            src="https://placehold.co/600x750/1C1C1C/E8E5DF?text=FEATURED"
+            alt="TITAL — спеціальна техніка"
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Article list right -->
+        <div class="articles__list">
+
+          <article class="art-item" data-reveal data-reveal-delay="1">
+            <div class="art-item__meta">
+              <span class="mono-label">СПЕЦТЕХНІКА</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <line x1="2" y1="14" x2="14" y2="2" stroke="currentColor" stroke-width="1.2"/>
+                <polyline points="5,2 14,2 14,11" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <a href="https://titalcompany.com/kraz-i-tital-vigotovili-peresuvnu-avtomijku/" class="art-item__title" target="_blank" rel="noopener">
+              Миюча мобільна установка УММ-5К
+            </a>
+          </article>
+
+          <article class="art-item" data-reveal data-reveal-delay="2">
+            <div class="art-item__meta">
+              <span class="mono-label">ПОЖЕЖНА ТЕХНІКА</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <line x1="2" y1="14" x2="14" y2="2" stroke="currentColor" stroke-width="1.2"/>
+                <polyline points="5,2 14,2 14,11" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <a href="https://titalcompany.com/dezinfektsiya-vulyts-mista-zolocheva/" class="art-item__title" target="_blank" rel="noopener">
+              Лісові пожежні автоцистерни АЦ-12-60
+            </a>
+          </article>
+
+          <article class="art-item" data-reveal data-reveal-delay="3">
+            <div class="art-item__meta">
+              <span class="mono-label">ПІДЙОМНИКИ</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <line x1="2" y1="14" x2="14" y2="2" stroke="currentColor" stroke-width="1.2"/>
+                <polyline points="5,2 14,2 14,11" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <a href="https://titalcompany.com/dvadtsyat-rokiv-mi-jshli-do-tsogo-momentu-2/" class="art-item__title" target="_blank" rel="noopener">
+              Пожежні телескопічні підіймачі АПТ-30
+            </a>
+          </article>
+
+          <div class="articles__cta-row">
+            <a href="https://titalcompany.com/" class="btn-outline" target="_blank" rel="noopener">
+              Всі статті <span>→</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer__top">
+
+      <!-- Large logo icon -->
+      <div class="footer__logo-wrap">
+        <svg class="footer__logo-big" viewBox="0 0 200 200" fill="none" aria-label="TITAL логотип">
+          <circle cx="100" cy="100" r="90" stroke="currentColor" stroke-width="8"/>
+          <line x1="100" y1="10" x2="100" y2="190" stroke="currentColor" stroke-width="8"/>
+          <line x1="10" y1="100" x2="190" y2="100" stroke="currentColor" stroke-width="8"/>
+        </svg>
+      </div>
+
+      <!-- Nav columns -->
+      <div class="footer__col">
+        <h4 class="footer__col-head">Навігація</h4>
+        <a href="#products">Продукція</a>
+        <a href="#about">Про компанію</a>
+        <a href="#worldwide">Географія</a>
+        <a href="#clients">Клієнти</a>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-head">Інформація</h4>
+        <a href="#articles">Статті</a>
+        <a href="https://titalcompany.com/product-category/pozhezhno-rjatuvaljna-tekhnika/" target="_blank" rel="noopener">Каталог</a>
+        <a href="https://titalcompany.com/en/" target="_blank" rel="noopener">English</a>
+        <a href="https://titalcompany.com/ru/" target="_blank" rel="noopener">Русский</a>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-head">Зв'язатись</h4>
+        <a href="https://www.facebook.com/TitalCompany" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.youtube.com/channel/UC4BGrF817ATCCKeUpwVaRkg/videos" target="_blank" rel="noopener">YouTube</a>
+        <div class="footer__lang">
+          <a href="https://titalcompany.com/">UA</a>
+          <a href="https://titalcompany.com/en/">EN</a>
+          <a href="https://titalcompany.com/ru/">RU</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2020. TITALCOMPANY. ВСІ ПРАВА ЗАХИЩЕНІ</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
