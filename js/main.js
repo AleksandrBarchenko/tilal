@@ -127,6 +127,67 @@
 
 
 /* ══════════════════════════════════════════════════════════
+   ROTATING KEYWORDS — Card 2 (About section)
+══════════════════════════════════════════════════════════ */
+(function initRotatingWords2() {
+  const container = document.getElementById('rotatingWord2');
+  if (!container) return;
+
+  const words = [
+    'Інновації',
+    'Якість',
+    'Надійність',
+    'Партнерство',
+    'Розвиток',
+    'Безпека',
+    'Ефективність'
+  ];
+
+  const span = container.querySelector('span');
+  if (!span) return;
+
+  let index = 0;
+
+  setInterval(() => {
+    span.classList.add('fade-out');
+
+    setTimeout(() => {
+      index = (index + 1) % words.length;
+      span.textContent = words[index];
+      span.classList.remove('fade-out');
+    }, 350);
+  }, 2500);
+})();
+
+
+/* ══════════════════════════════════════════════════════════
+   ARTICLES — IMAGE SWAP ON HOVER
+══════════════════════════════════════════════════════════ */
+(function initArticlesHover() {
+  var img = document.getElementById('articlesFeaturedImg');
+  if (!img) return;
+
+  var defaultSrc = 'images/armored.webp';
+  var articles = document.querySelectorAll('.art-item');
+
+  for (var i = 0; i < articles.length; i++) {
+    (function(article) {
+      var hoverSrc = article.getAttribute('data-img');
+      if (!hoverSrc) return;
+
+      article.addEventListener('mouseenter', function() {
+        img.src = hoverSrc;
+      });
+
+      article.addEventListener('mouseleave', function() {
+        img.src = defaultSrc;
+      });
+    })(articles[i]);
+  }
+})();
+
+
+/* ══════════════════════════════════════════════════════════
    SMOOTH ANCHOR SCROLL
 ══════════════════════════════════════════════════════════ */
 (function initSmoothScroll() {

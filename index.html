@@ -75,36 +75,55 @@
     -->
     <section class="hero">
 
-      <!-- Vertical grid lines inside hero -->
+      <!-- Full-screen background image + red overlay -->
+      <div class="hero__bg">
+        <img
+          src="images/hero.webp"
+          alt=""
+          class="hero__bg-img"
+          loading="eager"
+        >
+        <div class="hero__overlay"></div>
+      </div>
+
+      <!-- Vertical grid lines spanning full hero height -->
       <div class="hero__lines" aria-hidden="true">
         <div class="hero__line"></div>
         <div class="hero__line"></div>
         <div class="hero__line"></div>
+        <div class="hero__line"></div>
       </div>
 
-      <!-- Vehicle PNG (right side, bottom-anchored) -->
-      <div class="hero__vehicle">
-        <img
-          src="https://placehold.co/960x560/E8E5DF/CC1F1F?text=VEHICLE+PNG"
-          alt="Пожежна автоцистерна TITAL"
-          class="hero__vehicle-img"
-          loading="eager"
-        >
+      <!-- Grid content layer -->
+      <div class="hero__grid">
+
+        <!-- Nav col left -->
+        <nav class="hero__nav-left">
+          <a href="#products">Продукція</a>
+          <a href="#about">Про компанію</a>
+          <a href="#worldwide">Географія</a>
+          <a href="#clients">Клієнти</a>
+        </nav>
+
+        <!-- Nav col right -->
+        <nav class="hero__nav-right">
+          <a href="#articles">Статті</a>
+          <a href="#footer">Контакти</a>
+        </nav>
+
+        <!-- Tagline (right side, between nav and title) -->
+        <p class="hero__tagline">
+          Виробництво та<br>
+          проектування пожежної<br>
+          і спеціальної техніки.
+        </p>
+
+        <!-- Title: just "Tital" -->
+        <div class="hero__title-wrap">
+          <h1 class="hero__title">Tital</h1>
+        </div>
+
       </div>
-
-      <!-- Main title (bottom-left) -->
-      <div class="hero__title-wrap">
-        <h1 class="hero__title">Tital<br>Company</h1>
-      </div>
-
-      <!-- Tagline (bottom-right) -->
-      <p class="hero__tagline">
-        ВИРОБНИЦТВО ТА<br>
-        ПРОЕКТУВАННЯ<br>
-        ПОЖЕЖНОЇ І<br>
-        СПЕЦІАЛЬНОЇ ТЕХНІКИ.
-      </p>
-
     </section>
 
     <!-- ══════════════════ PRODUCTS ══════════════════ -->
@@ -137,7 +156,7 @@
           </div>
           <div class="p-card__img-wrap">
             <!-- images/fire-truck.png → зображення 1: Mercedes-Benz Actros червона пожежна машина -->
-            <img src="https://placehold.co/400x260/EFEDE7/CC1F1F?text=ПОЖЕЖНА" alt="Пожежно-рятувальна техніка" loading="lazy">
+            <img src="images/firetrack.webp" alt="Пожежно-рятувальна техніка" loading="lazy">
           </div>
           <h3 class="p-card__title">Пожежно-рятувальна техніка</h3>
           <a href="https://titalcompany.com/product-category/pozhezhno-rjatuvaljna-tekhnika/" class="p-card__link" target="_blank" rel="noopener">
@@ -157,7 +176,7 @@
           </div>
           <div class="p-card__img-wrap">
             <!-- images/airport-truck.png → зображення 2: сучасна електрична пожежна машина (red/yellow) -->
-            <img src="https://placehold.co/400x260/EFEDE7/CC1F1F?text=АЕРОДРОМ" alt="Аеродромна техніка" loading="lazy">
+            <img src="images/airport.webp" alt="Аеродромна техніка" loading="lazy">
           </div>
           <h3 class="p-card__title">Аеродромна техніка</h3>
           <a href="https://titalcompany.com/product-category/aerodromna-tekhnika/" class="p-card__link" target="_blank" rel="noopener">
@@ -177,7 +196,7 @@
           </div>
           <div class="p-card__img-wrap">
             <!-- images/industrial-truck.png → зображення 3: IVECO Daily flatbed -->
-            <img src="https://placehold.co/400x260/EFEDE7/CC1F1F?text=ІНДУСТРІА" alt="Індустріальна техніка" loading="lazy">
+            <img src="images/vehicles.jpeg" alt="Індустріальна техніка" loading="lazy">
           </div>
           <h3 class="p-card__title">Індустріальна техніка</h3>
           <a href="https://titalcompany.com/product-category/industrialjna-tekhnika/" class="p-card__link" target="_blank" rel="noopener">
@@ -197,7 +216,7 @@
           </div>
           <div class="p-card__img-wrap">
             <!-- images/military-truck.png → зображення 5: бронеавтомобіль LENCO сірий (вид спереду) -->
-            <img src="https://placehold.co/400x260/EFEDE7/CC1F1F?text=ВІЙСЬКОВА" alt="Поліцейська та військова техніка" loading="lazy">
+            <img src="images/military.jpg" alt="Поліцейська та військова техніка" loading="lazy">
           </div>
           <h3 class="p-card__title">Поліцейська та військова техніка</h3>
           <a href="https://titalcompany.com/product-category/policejsjka-ta-vijsjkova-tekhnikaa/" class="p-card__link" target="_blank" rel="noopener">
@@ -217,7 +236,7 @@
           </div>
           <div class="p-card__img-wrap">
             <!-- images/equipment.png → зображення 6: бронеавтомобіль LENCO з відкритою рампою -->
-            <img src="https://placehold.co/400x260/EFEDE7/CC1F1F?text=ОБЛАДНАННЯ" alt="Спеціальне обладнання" loading="lazy">
+            <img src="images/armored.webp" alt="Спеціальне обладнання" loading="lazy">
           </div>
           <h3 class="p-card__title">Спеціальне обладнання</h3>
           <a href="https://titalcompany.com/product-category/obladnannjaa/" class="p-card__link" target="_blank" rel="noopener">
@@ -280,7 +299,7 @@
               <span>Що нами рухає</span>
               <span class="kw-card__num">02</span>
             </div>
-            <div class="kw-card__word">
+            <div class="kw-card__word" id="rotatingWord2">
               <span>Інновації</span>
             </div>
             <div class="kw-card__footer">
@@ -312,7 +331,7 @@
             https://simplemaps.com/resources/svg-world  (безкоштовно)
           -->
           <div class="worldwide__map-wrap" data-reveal>
-            <img src="https://placehold.co/900x460/E8E5DF/1C1C1C?text=WORLD+MAP" alt="Географія роботи TITAL" class="worldwide__map-img">
+            <img src="images/map.svg" alt="Географія роботи TITAL" class="worldwide__map-img">
             <div class="worldwide__legend">
               <div class="legend-item">
                 <span class="legend-dot legend-dot--active"></span>
@@ -420,7 +439,8 @@
           -->
           <!-- images/article-featured.jpg → зображення 7: чорний поліцейський бронеавтомобіль -->
           <img
-            src="https://placehold.co/600x750/1C1C1C/E8E5DF?text=FEATURED"
+            id="articlesFeaturedImg"
+            src="images/armored.webp"
             alt="TITAL — спеціальна техніка"
             loading="lazy"
           >
@@ -429,7 +449,7 @@
         <!-- Article list right -->
         <div class="articles__list">
 
-          <article class="art-item" data-reveal data-reveal-delay="1">
+          <article class="art-item" data-reveal data-reveal-delay="1" data-img="images/armored.webp">
             <div class="art-item__meta">
               <span class="mono-label">СПЕЦТЕХНІКА</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -442,7 +462,7 @@
             </a>
           </article>
 
-          <article class="art-item" data-reveal data-reveal-delay="2">
+          <article class="art-item" data-reveal data-reveal-delay="2" data-img="images/firetrack.webp">
             <div class="art-item__meta">
               <span class="mono-label">ПОЖЕЖНА ТЕХНІКА</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -455,7 +475,7 @@
             </a>
           </article>
 
-          <article class="art-item" data-reveal data-reveal-delay="3">
+          <article class="art-item" data-reveal data-reveal-delay="3" data-img="images/military.jpg">
             <div class="art-item__meta">
               <span class="mono-label">ПІДЙОМНИКИ</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
